@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: /home/circleci/.go_workspace/src/github.com/gruntwork-io/gruntwork-installer
+  working_directory: /home/circleci/.go_workspace/src/github.com/craftech-io/craftech-installer
   machine: true
 
 version: 2

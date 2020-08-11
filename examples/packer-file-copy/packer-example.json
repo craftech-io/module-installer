@@ -2,11 +2,11 @@
   "variables": {
     "aws_region": "us-east-1",
     "github_auth_token": "{{env `GITHUB_OAUTH_TOKEN`}}",
-    "gruntwork_installer_version": "0.0.13",
-    "gruntwork_packer_file_copy_version": "v0.0.1"
+    "craftech_installer_version": "0.0.13",
+    "craftech_packer_file_copy_version": "v0.0.1"
   },
   "builders": [{
-    "ami_name": "gruntwork-cloudwatch-log-aggregation-example-ubuntu-{{isotime | clean_ami_name}}",
+    "ami_name": "craftech-cloudwatch-log-aggregation-example-ubuntu-{{isotime | clean_ami_name}}",
     "ami_description": "An Ubuntu AMI that shows an example of using the packer-file-copy module to copy files into an AMI.",
     "instance_type": "t2.micro",
     "region": "{{user `aws_region`}}",
@@ -27,11 +27,11 @@
     "destination": "/tmp/packer-files"
   },{
     "type": "shell",
-    "inline": "curl -LsS https://raw.githubusercontent.com/gruntwork-io/gruntwork-installer/master/bootstrap-gruntwork-installer.sh | bash /dev/stdin --version {{user `gruntwork_installer_version`}}"
+    "inline": "curl -LsS https://raw.githubusercontent.com/craftech-io/craftech-installer/master/bootstrap-craftech-installer.sh | bash /dev/stdin --version {{user `craftech_installer_version`}}"
   },{
     "type": "shell",
     "inline": [
-      "gruntwork-install --module-name 'packer-file-copy' --repo 'https://github.com/gruntwork-io/package-util' --tag '{{user `gruntwork_packer_file_copy_version`}}'"
+      "craftech-install --module-name 'packer-file-copy' --repo 'https://github.com/craftech-io/package-util' --tag '{{user `craftech_packer_file_copy_version`}}'"
     ],
     "environment_vars": [
       "GITHUB_OAUTH_TOKEN={{user `github_auth_token`}}"

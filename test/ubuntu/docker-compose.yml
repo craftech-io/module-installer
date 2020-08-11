@@ -1,5 +1,5 @@
 installer:
-  image: gruntwork/gruntwork-installer-ubuntu
+  image: craftech/craftech-installer-ubuntu
   volumes:
     # Mount the scripts in the root directory under /src
     - ../../:/src

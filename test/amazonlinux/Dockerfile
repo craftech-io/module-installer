@@ -1,5 +1,5 @@
 FROM amazonlinux
-MAINTAINER Gruntwork <info@gruntwork.io>
+MAINTAINER Craftech <info@craftech.io>
 
 RUN yum install -y curl sudo
 

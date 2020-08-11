@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Script used by gruntwork-install to install the packer-file-copy module.
+# Script used by craftech-install to install the packer-file-copy module.
 #
 
 set -e

@@ -1,5 +1,5 @@
 installer:
-  image: gruntwork/gruntwork-installer-amazonlinux
+  image: craftech/craftech-installer-amazonlinux
   volumes:
     # Mount the scripts in the root directory under /src
     - ../../:/src

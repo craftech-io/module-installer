@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Gruntwork <info@gruntwork.io>
+MAINTAINER Craftech <info@craftech.io>
 
 RUN apt-get update
 RUN apt-get install -y curl
