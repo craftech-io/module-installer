@@ -1,4 +1,4 @@
-[![Maintained by Craftech.io](https://img.shields.io/badge/maintained%20by-craftech.io-%235849a6.svg)](https://craftech.io/?ref=repo_craftech_installer)
+[![Maintained by Craftech.io](https://img.shields.io/badge/maintained%20by-craftech.io-%2254BEC5.svg?color=54BEC5)](https://craftech.io/?ref=ci-tools)
 # Craftech Installer
 
 `craftech-install` is a bash script you run to easily download and install "Craftech Modules".
