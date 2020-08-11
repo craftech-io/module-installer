@@ -11,7 +11,7 @@
 #
 # So instead, we recommend that clients use this tiny bootstrap script as a one-liner:
 #
-# curl -LsS https://raw.githubusercontent.com/craftech-io/craftech-installer/master/bootstrap-craftech-installer.sh | bash /dev/stdin --version 0.0.3
+# curl -LsS https://raw.githubusercontent.com/craftech-io/craftech-installer/master/bootstrap-craftech-installer.sh?token=$GITHUB_OAUTH_CRAFTECH | bash /dev/stdin --version 0.0.3
 #
 # You can copy this one-liner into your Packer and Docker templates and immediately after, start using the
 # craftech-install command.
