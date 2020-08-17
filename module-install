@@ -18,12 +18,12 @@ function print_usage {
   echo
   echo "Usage: module-install [OPTIONS]"
   echo
-  echo "Download a Module Script Module and install it."
+  echo "Download a Script Module and install it."
   echo
   echo "Required Arguments:"
   echo
   echo -e "  --repo\t\tThe repo to install from."
-  echo -e "  --tag\t\t\tThe version of --repo to install. Follows the syntax described at https://github.com/module-io/fetch#tag-constraint-expressions."
+  echo -e "  --tag\t\t\tThe version of --repo to install. Follows the syntax described at https://github.com/gruntwork-io/fetch#tag-constraint-expressions."
   echo
   echo "Specify exactly one of:"
   echo
@@ -45,8 +45,8 @@ function print_usage {
   echo "Example:"
   echo
   echo "  module-install \\"
-  echo "    --module-name 'fail2ban' \\"
-  echo "    --repo 'https://github.com/module-io/module-security' \\"
+  echo "    --module-name 'install-rundeck' \\"
+  echo "    --repo 'https://github.com/craftech-io/module-ci' \\"
   echo
 }
 
