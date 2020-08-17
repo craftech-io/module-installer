@@ -1,5 +1,5 @@
 FROM amazonlinux
-MAINTAINER Craftech <info@craftech.io>
+MAINTAINER Module <info@module.io>
 
 RUN yum install -y curl sudo
 

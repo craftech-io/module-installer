@@ -5,11 +5,11 @@ readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR/.."
 
 echo "Building docker containers for test"
-docker build -t craftech/craftech-installer-ubuntu test/ubuntu
-docker build -t craftech/craftech-installer-ubuntu18 test/ubuntu18
-docker build -t craftech/craftech-installer-amazonlinux test/amazonlinux
-docker build -t craftech/craftech-installer-centos test/centos
-docker build -t craftech/craftech-installer-no-sudo-ubuntu test/no_sudo
+docker build -t module/module-installer-ubuntu test/ubuntu
+docker build -t module/module-installer-ubuntu18 test/ubuntu18
+docker build -t module/module-installer-amazonlinux test/amazonlinux
+docker build -t module/module-installer-centos test/centos
+docker build -t module/module-installer-no-sudo-ubuntu test/no_sudo
 
 echo "Running integration tests using docker-compose"
 docker-compose -f test/ubuntu/docker-compose.yml run installer /test/integration-test.sh

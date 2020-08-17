@@ -1,5 +1,5 @@
 installer:
-  image: craftech/craftech-installer-no-sudo-ubuntu
+  image: module/module-installer-no-sudo-ubuntu
   volumes:
     # Mount the scripts in the root directory under /src
     - ../../:/src

@@ -1,5 +1,5 @@
 installer:
-  image: craftech/craftech-installer-ubuntu18
+  image: module/module-installer-ubuntu18
   volumes:
     # Mount the scripts in the root directory under /src
     - ../../:/src

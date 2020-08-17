@@ -1,6 +1,6 @@
 #!/bin/bash
 # A dirt simple install script that expects a single argument, --test-args, and validates that it equals '1 2 3 *'
-# in order to test that the --module-param args in craftech-install works correctly.
+# in order to test that the --module-param args in module-install works correctly.
 
 set -e
 

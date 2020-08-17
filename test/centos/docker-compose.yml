@@ -1,5 +1,5 @@
 installer:
-  image: craftech/craftech-installer-centos
+  image: module/module-installer-centos
   volumes:
     # Mount the scripts in the root directory under /src
     - ../../:/src

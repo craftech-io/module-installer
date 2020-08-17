@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Craftech <info@craftech.io>
+MAINTAINER Module <info@module.io>
 
 RUN apt-get update
 RUN apt-get install -y curl sudo

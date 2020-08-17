@@ -1,18 +1,18 @@
 #!/bin/bash
 #
-# Some basic automated tests for craftech-installer
+# Some basic automated tests for module-installer
 
 set -e
 
-readonly LOCAL_INSTALL_URL="file:///src/craftech-install"
+readonly LOCAL_INSTALL_URL="file:///src/module-install"
 
-echo "Using local copy of bootstrap installer to install local copy of craftech-install"
-./src/bootstrap-craftech-installer.sh --download-url "$LOCAL_INSTALL_URL" --version "ignored-for-local-install" --no-sudo "true"
+echo "Using local copy of bootstrap installer to install local copy of module-install"
+./src/bootstrap-module-installer.sh --download-url "$LOCAL_INSTALL_URL" --version "ignored-for-local-install" --no-sudo "true"
 
-echo "Using craftech-install to install a binary from the gruntkms repo into a different folder without using sudo"
-craftech-install \
+echo "Using module-install to install a binary from the gruntkms repo into a different folder without using sudo"
+module-install \
   --binary-name "gruntkms" \
-  --repo "https://github.com/craftech-io/gruntkms" \
+  --repo "https://github.com/module-io/gruntkms" \
   --tag "v0.0.1" \
   --binary-install-dir "$HOME" \
   --no-sudo "true"

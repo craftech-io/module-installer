@@ -1,6 +1,6 @@
 #!/bin/bash
 # A dirt simple install script that expects a single argument, --file-to-cat, that it runs cat on. This is used to
-# test that the --module-param args in craftech-install work correctly.
+# test that the --module-param args in module-install work correctly.
 
 set -e
 

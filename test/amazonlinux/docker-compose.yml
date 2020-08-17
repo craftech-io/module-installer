@@ -1,5 +1,5 @@
 installer:
-  image: craftech/craftech-installer-amazonlinux
+  image: module/module-installer-amazonlinux
   volumes:
     # Mount the scripts in the root directory under /src
     - ../../:/src
