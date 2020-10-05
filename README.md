@@ -17,7 +17,7 @@ Our solution is to make the `module-install` tool open source and to publish a `
 script that anyone can use to install `module-install` itself. To use it, execute the following:
 
 ```
-curl -LsS https://raw.githubusercontent.com/craftech-io/module-installer/master/bootstrap-module-installer.sh | bash /dev/stdin --version v0.0.22
+curl -LsS https://raw.githubusercontent.com/craftech-io/module-installer/master/bootstrap-module-installer.sh | bash /dev/stdin --version v0.0.29
 ```
 
 Notice the `--version` parameter at the end where you specify which version of `module-install` to install. See the
