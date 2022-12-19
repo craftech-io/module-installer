@@ -25,7 +25,7 @@ readonly DEFAULT_FETCH_VERSION="v0.3.2"
 readonly FETCH_DOWNLOAD_URL_BASE="https://github.com/gruntwork-io/fetch/releases/download"
 readonly FETCH_INSTALL_PATH="$BIN_DIR/fetch"
 
-readonly MODULE_INSTALLER_DOWNLOAD_URL_BASE="https://raw.githubusercontent.com/craftech-io/module-installer/tree/fix_change-hardcoded-source-path"
+readonly MODULE_INSTALLER_DOWNLOAD_URL_BASE="https://raw.githubusercontent.com/craftech-io/module-installer"
 readonly MODULE_INSTALLER_INSTALL_PATH="$BIN_DIR/module-install"
 readonly MODULE_INSTALLER_SCRIPT_NAME="module-install"
 
